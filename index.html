@@ -1,65 +1,134 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!---- ghört eifach drzue-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---- für css wichtig-->
     <title>Skitouren in der Schweiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="grossdiv">
+      <!---- Titel und infos müese ou i grossdiv, da si ou im grid söue formatiert werde-->
+      <div id="titel">
+        <h1><strong>3 Skitouren im Diemtigtal</strong></h1>
+      </div>
 
-  <h1><strong>3 Skitouren im Diemtigtal</strong></h1>
+      <div id="infos">
+        <h2>Herzlich Willkommen auf dieser Website</h2>
+        <p>
+          Gehst du gerne auf Skitouren, weisst aber nie wo du hin sollst? Dann
+          bist du hier genau richtig. <br />
+          <!---z lange fliesstext isch ni so guet, <br> macht e zileumbruch-->
+          Hier findest du 3 Ideen für Skitouren im Diemtigtal. Klicke einfach
+          auf das Bild um die detaillierte Skitourenbeschreibung zu öffen.
+        </p>
+      </div>
 
-  <h2>Hey Herzlich Willkommen auf dieser Website</h2>
-  <p>Gehst du gerne auf Skitouren, weisst aber nie wo du hin sollst? Dann bist du hier genau richtig. Hier findest du 3 Ideen für Skitouren im Diemtigtal. Klicke einfach auf das Bild um die detaillierte Skitourenbeschreibung zu öffen.</p>
-<div class="grossdiv">
-  <img id="diemtigtal" src="diemtigtal.jpg" alt="bild skitouren">
-  <div class="Meniggrat">
-    <div class="bild">
-      <h2>Meniggrund - Meniggrat</h2>
-      <a href="Meniggrat.html">
-        <img id="Meniggrat" src="Meniggrat.jpg" alt="Meniggrat">
-      </a>
-    </div>
-  
-    <div class="tabelle">
-      <p>Angaben zur Tour:</p>
-      <table>
-        <tr><th>Dauer</th><th>Strecke</th><th>Aufstieg in Höhenmeter</th></tr>
-          <tr><td>1,5 std.</td><td>6,1 km</td><td>900 Höhenmeter</td></tr>
-      </table>
-    </div>
-  </div>
-  <div class="Stand">
-    <div class="bild1">
-      <h3>Meniggrund - Stand </h3>
-      <a href="Stand.html">
-      <img id="Stand"src="Stand.jpg" alt="Stand">
-      </a>
-    </div>
-    <div class="tabelle1">
-      <p>Angaben zur Tour:</p>
-      <table>
-          <tr><th>Dauer </th><th>Strecke </th><th>Aufstieg in Höhenmeter </th></tr>
-          <tr><td>4,30 std.</td><td>7,9 km</td><td>650 Höhenmeter</td></tr>
-      </table>
-    </div>
-  </div>
-  <div class="Turnen">
-    <div class="bild2">
-      <h4>Meniggrund - Turnen</h4>
-      <a href="Turnen.html">
-        <img id="Turnen"src="Turnen.jpg" alt="Turnen">
-      </a>
-    </div>
-    <div class="tabelle2">
-      <p1>Angaben zur Tour:</p1>
-      <table>
-          <tr><th>Dauer</th><th>Strecke</th><th>Aufstieg in Höhenmeter</th></tr>
-          <tr><td>2,15 std.</td><td>5,6km</td><td>866 Höhenmeter</td></tr>
-      </table>
-    </div>
-  </div>
-</div>
+      <!--- <img id="diemtigtal" src="diemtigtal.jpg" alt="bild skitouren"> --->
+      <!-- unnötig da i css dr hintergrund festgleit isch--->
 
-<p>Wenn du noch mehr Skitouren unternehmen möchtest, kannst du hier auf den Link klicken, dort findest du noch mehr Ideen.</p>
+      <!-----<div class="Meniggrat">--->
+      <!--- die übercontainer si unnötig, hase überall usegno, das wahrscheinlich es produkt vom tim isch :)-->
+
+      <div id="bild">
+        <h2>Meniggrund - Meniggrat</h2>
+        <a href="Meniggrat.html">
+          <img id="Meniggrat" src="Meniggrat.jpg" alt="Meniggrat" />
+        </a>
+      </div>
+
+      <div class="tabelle0 tabelle">
+        <p>Angaben zur Tour:</p>
+        <table>
+          <tr>
+            <th>Dauer</th>
+            <th>Strecke</th>
+            <th>Aufstieg in Höhenmeter</th>
+          </tr>
+          <tr>
+            <td>1,5 std.</td>
+            <td>6,1 km</td>
+            <td>900 Höhenmeter</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="bild1">
+        <h2>Meniggrund - Stand</h2>
+        <a href="Stand.html">
+          <img id="Stand" src="Stand.jpg" alt="Stand" />
+        </a>
+      </div>
+
+      <div class="tabelle1 tabelle">
+        <p>Angaben zur Tour:</p>
+        <table>
+          <tr>
+            <th>Dauer</th>
+            <th>Strecke</th>
+            <th>Aufstieg in Höhenmeter</th>
+          </tr>
+          <tr>
+            <td>4,30 std.</td>
+            <td>7,9 km</td>
+            <td>650 Höhenmeter</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="bild2">
+        <h2>Meniggrund - Turnen</h2>
+        <a href="Turnen.html">
+          <img id="Turnen" src="Turnen.jpg" alt="Turnen" />
+        </a>
+      </div>
+
+      <div class="tabelle2 tabelle">
+        <p>Angaben zur Tour:</p>
+        <table>
+          <tr>
+            <th>Dauer</th>
+            <th>Strecke</th>
+            <th>Aufstieg in Höhenmeter</th>
+          </tr>
+          <tr>
+            <td>2,15 std.</td>
+            <td>5,6km</td>
+            <td>866 Höhenmeter</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="cont">
+        <!---unsichtbarer container damit die Bilder in der Mitte sind-->
+        <table class="cont">
+          <tr>
+            <th>Dauer</th>
+            <th>Strecke</th>
+            <th>Aufstieg in Höhenmeter</th>
+          </tr>
+          <tr>
+            <td>4,30 std.</td>
+            <td>7,9 km</td>
+            <td>650 Höhenmeter</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schlusswort">
+        <p>
+          Wenn du noch mehr Skitouren unternehmen möchtest, kannst du
+          <a
+            href="https://www.asi-reisen.de/di/skitouren-schweiz?gclid=CjwKCAiAv_KMBhAzEiwAs-rX1NusnJo-1xm2EHFrkEp62RzmvZ-pdOyDPDFwimmAahBsFW1dk5IkPhoC4MYQAvD_BwE"
+            target="_blank"
+            >hier</a
+          >
+          auf den Link klicken, dort findest du noch mehr Ideen.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
