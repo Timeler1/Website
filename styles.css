@@ -1,115 +1,91 @@
-h1{
-  font-size: 50px;
-  color:#4A708B
-}
-h2
-{
-  font-size: 20px;
-  font-weight:bold;
-}
-h3{
-  font-size: 20px;
-  font-weight: bold;
-}
-h4{
-  font-size: 20px;
-  font-weight: bold;
-}
-body{
+body {
   background-image: url(diemtigtal.jpg);
+  background-repeat: no-repeat; /*macht das sich z Bild uf grösserne Bildschirme nid wiederholt*/
+  background-position: cover; /*macht das immer dr ganz Bildschirm vo 1 Bild igno wird*/
+  background-size: 100%;
   background-attachment: fixed;
   text-align: center;
+  font-family: Arial; /*chasch no e schrift inetue*/
 }
-img#diemtigtal{
-  width:1px;
-  height:auto;
-}
-img#Meniggrat{
-  display: block;
-  width:10cm;
-  height:5cm;
-  margin-left: auto;
-  margin-right: auto;
-  box-align: center;
 
+h1 {
+  font-size: 50px;
+  color: #4a708b;
 }
-img#Stand{
-  width: 8cm;
-  height: 5cm;
-  margin-left: auto;
-  margin-right: auto;
-  box-align: center;
+h2 {
+  text-shadow: 0px 0px 5px lightgrey;
+  font-size: 20px;
+  font-weight: bold;
 }
-img#Turnen{
-  width: 7.5cm;
-  height: 5cm;
-  margin-left: auto;
-  margin-right: auto;
-  box-align: center;
+a {
+  color: lightgrey;
 }
-.Stand{
-  grid-column: 2;
-  grid-row: 2;
+.grossdiv {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  justify-items: center;
-}
-.Turnen{
-  grid-column: 2;
-  grid-row: 3;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  justify-items: center;
-}
-.grossdiv{
-  display: grid;
-  grid-template-columns: 33%, 66%;
-  grid-column-gap: 10px;
-  justify-items: center;
-}
-.Meniggrat{
-  grid-column: 2;
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  justify-items: center;
-}
-.bild{
-  grid-column: 1;
-  grid-row: 1;
-  margin-right: auto;
+  grid-template-areas:
+    "titel titel titel "
+    "infos infos infos "
+    "cont bild tabelle "
+    "cont bild1 tabelle1 "
+    "cont bild2 tabelle2 "
+    "schlusswort schlusswort schlusswort ";
+  grid-column-gap: 30px;
+  grid-row-gap: 5px;
+  width: fit-content;
   margin-left: auto;
-  align-self: center;
-}
-.bild1{
-  grid-column: 1;
-  grid-row: 1;
   margin-right: auto;
-  margin-left: auto;
-  align-self: center;
 }
-.bild2{
-  grid-column: 1;
-  grid-row: 1;
-  margin-right: auto;
-  margin-left: auto;
-  align-self: center;
+img {
+  height: 5cm; /*da aui bilder söue 5cm höch si chames bim img allgemein inetue*/
+  box-shadow: 10px 10px 5px rgba(31, 30, 30, 0.623); /*macht das ds bild no chli usesteit. ersti zahl seit wie wiit rechts/links, zwöiti ufe u abe u driti dr fade u vierti d colour u d transperancy*/
 }
-.tabelle{
-  grid-column: 2;
-  grid-row: 1;
-  align-self: center;
+td,
+th {
+  padding: 4px;
 }
-.tabelle1{
-  grid-column: 2;
-  grid-row: 1;
-  align-self: center;
+.cont {
+  grid-area: cont;
+  color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /*letschti value macht dases 0% transparency het*/
 }
-.tabelle2{
-  grid-column: 2;
-  grid-row: 1;
+#titel {
+  grid-area: titel;
+}
+#infos {
+  grid-area: infos;
+}
+#bild {
+  grid-area: bild;
+}
+#bild1 {
+  grid-area: bild1;
+}
+#bild2 {
+  grid-area: bild2;
+}
+
+.tabelle {
+  justify-self: left;
   align-self: center;
+  background-color: rgba(211, 211, 211, 0.733);
+  padding: 4px;
+  text-align: left;
+}
+.tabelle0 {
+  grid-area: tabelle;
+}
+.tabelle1 {
+  grid-area: tabelle1;
+}
+.tabelle2 {
+  grid-area: tabelle2;
+}
+.schlusswort {
+  grid-area: schlusswort;
+  color: white;
+  text-shadow: 0px 0px 5px black; /*damit dr text hinger egal welem teil vom bild lesbar isch*/
 }
